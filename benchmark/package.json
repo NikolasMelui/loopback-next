@@ -14,7 +14,7 @@
   },
   "scripts": {
     "build": "lb-tsc es2017 --outDir dist",
-    "clean": "lb-clean dist",
+    "clean": "lb-clean dist tsconfig.build.tsbuildinfo",
     "pretest": "npm run clean && npm run build",
     "test": "lb-mocha \"dist/__tests__/**/*.js\"",
     "prestart": "npm run build",

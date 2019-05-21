@@ -13,6 +13,7 @@ benchmark/dist
 .sandbox
 packages/cli/generators/datasource/connectors.json
 docs/site/readmes
+**/tsconfig.build.tsbuildinfo
 
 # Exclude all files under sandbox except README.md and example
 /sandbox/*

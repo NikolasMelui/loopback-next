@@ -8,7 +8,7 @@
   "scripts": {
     "build:apidocs": "lb-apidocs",
     "build": "lb-tsc es2017 --outDir dist",
-    "clean": "lb-clean loopback-json-schema*.tgz dist package api-docs",
+    "clean": "lb-clean loopback-json-schema*.tgz dist package api-docs tsconfig.build.tsbuildinfo",
     "pretest": "npm run build",
     "test": "lb-mocha \"dist/__tests__/**/*.js\"",
     "verify": "npm pack && tar xf loopback-json-schema*.tgz && tree package && npm run clean"
